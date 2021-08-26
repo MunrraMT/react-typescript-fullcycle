@@ -1,12 +1,16 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-        "prettier"
+        "airbnb-typescript",
+        "prettier",
+        "plugin:jest/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -19,7 +23,8 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "prettier"
+        "prettier",
+        "jest"
     ],
     "rules": {
         "react/react-in-jsx-scope": 0,
@@ -33,6 +38,6 @@
                     ".tsx"
                 ]
             }
-        ]
+        ],
     }
 }
