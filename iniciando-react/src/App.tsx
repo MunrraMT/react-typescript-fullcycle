@@ -1,8 +1,8 @@
 import './App.css';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className='App'>
+    <div className="App">
       <h1>Teste</h1>
     </div>
   );
