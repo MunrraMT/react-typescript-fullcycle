@@ -8,6 +8,6 @@ WORKDIR /home/node/app
 
 COPY . .
 
-RUN yarn
+VOLUME [ "/home/node/app" ]
 
-ENTRYPOINT [ "yarn", "start" ]
+ENTRYPOINT [ "sh", ".docker/entrypoint.sh" ]
