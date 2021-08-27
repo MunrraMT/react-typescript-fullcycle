@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import App from './App';
 
 test('renders learn react link', () => {
-  const { getByText } = render(<App />);
+  const { getByRole } = render(<App />);
 
-  expect(getByText('Teste')).toBeInTheDocument();
+  expect(getByRole('heading').tagName).toEqual('H1');
 });

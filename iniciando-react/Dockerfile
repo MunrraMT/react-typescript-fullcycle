@@ -8,6 +8,4 @@ WORKDIR /home/node/app
 
 COPY . .
 
-VOLUME [ "/home/node/app" ]
-
 ENTRYPOINT [ "sh", ".docker/entrypoint.sh" ]
