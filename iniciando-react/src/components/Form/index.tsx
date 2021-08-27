@@ -1,6 +1,6 @@
 import { FormEvent, useRef } from 'react';
 
-import './Form.css';
+import './style.css';
 
 const Form = (): JSX.Element => {
   const inputNameRef = useRef<HTMLInputElement>(null);
